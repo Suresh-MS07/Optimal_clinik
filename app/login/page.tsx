@@ -18,13 +18,13 @@ export default function AdminDashboard() {
   // ... (baaki saari states purani wali)
 
   // Auth Check on Load
-  useEffect(() => {
-    const authStatus = localStorage.getItem('isOptimalAdmin')
-    if (authStatus === 'true') {
-      setIsAuthenticated(true)
-      // fetchData()
-    }
-  }, [])
+ // ✅ Sahi (Ise copy karke replace karo)
+useEffect(() => {
+  const authStatus = localStorage.getItem('isOptimalAdmin')
+  if (authStatus === 'true') {
+    setIsAuthenticated(true)
+    // fetchData() ko yahan se poora hata do
+  }
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
