@@ -22,7 +22,7 @@ export default function AdminDashboard() {
     const authStatus = localStorage.getItem('isOptimalAdmin')
     if (authStatus === 'true') {
       setIsAuthenticated(true)
-      fetchData()
+      // fetchData()
     }
   }, [])
 
