@@ -109,7 +109,7 @@ export default function AdminDashboard() {
       startY: 30,
       head: [['Patient', 'Phone', 'Service', 'Date', 'Status']],
       body: appointments.map(a => [a.patient_name, a.phone, a.service, a.date, a.status.toUpperCase()]),
-      headStyles: { fillStyle: [37, 99, 235] }
+      headStyles: { fillColor:: [37, 99, 235] }
     })
     doc.save(`Optimal_Report_${new Date().toLocaleDateString()}.pdf`)
   }
