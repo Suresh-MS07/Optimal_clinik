@@ -27,7 +27,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#020617] flex items-center justify-center p-6 relative overflow-hidden">
+    <div className="min-h-screen bg-[#020617] flex items-center justify-center p-6 relative overflow-hidden text-white font-sans">
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/10 blur-[100px] rounded-full" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-red-600/5 blur-[100px] rounded-full" />
       
@@ -36,7 +36,7 @@ export default function LoginPage() {
           <div className="bg-blue-600 w-16 h-16 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-[0_0_30px_rgba(37,99,235,0.4)]">
             <ShieldCheck className="text-white" size={32} />
           </div>
-          <h2 className="text-3xl font-black italic tracking-tighter uppercase text-white">Admin <span className="text-blue-500">Access</span></h2>
+          <h2 className="text-3xl font-black italic tracking-tighter uppercase">Admin <span className="text-blue-500">Access</span></h2>
           <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mt-2 italic">Optimal Physiotherapy Control</p>
         </div>
 
@@ -48,6 +48,7 @@ export default function LoginPage() {
               placeholder="Username"
               className="w-full p-5 bg-blue-950/30 border-2 border-blue-900/30 focus:border-blue-500 rounded-2xl outline-none font-bold text-sm text-white transition-all"
               onChange={(e) => setUser(e.target.value)}
+              required
             />
           </div>
           <div className="space-y-2">
@@ -57,6 +58,7 @@ export default function LoginPage() {
               placeholder="••••••••"
               className="w-full p-5 bg-blue-950/30 border-2 border-blue-900/30 focus:border-blue-500 rounded-2xl outline-none font-bold text-sm text-white transition-all"
               onChange={(e) => setPass(e.target.value)}
+              required
             />
           </div>
         </div>
